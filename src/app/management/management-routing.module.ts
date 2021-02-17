@@ -5,7 +5,17 @@ import { ManagementComponent } from "./management.component";
 const routes: Routes = [
   {
     path:'',
-    component:ManagementComponent
+    component:ManagementComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'laptop',
+      },
+      {
+        path: 'laptop',
+        loadChildren:()=>import('./laptop/laptop.module').then((m)=>m.LaptopModule),
+      },
+    ]
   }
 ];
 
