@@ -5,7 +5,17 @@ import { LaptopComponent } from "./laptop.component";
 const routes: Routes = [
   {
     path:'',
-    component:LaptopComponent
+    component:LaptopComponent,
+    children:[
+      {
+        path:'',
+        redirectTo:'list-laptop'
+      },
+      {
+        path: 'list-laptop',
+        loadChildren:()=>import('./list-laptop/list-laptop.module').then((m)=>m.ListLaptopModule),
+      },
+    ]
   }
 ];
 
