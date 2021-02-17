@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'laptop',
         loadChildren:()=>import('./laptop/laptop.module').then((m)=>m.LaptopModule),
       },
+      {
+        path: 'monitor',
+        loadChildren:()=>import('./monitor/monitor.module').then((m)=>m.MonitorModule),
+      },
     ]
   }
 ];
