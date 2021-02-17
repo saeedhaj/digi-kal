@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'list-laptop',
         loadChildren:()=>import('./list-laptop/list-laptop.module').then((m)=>m.ListLaptopModule),
       },
+      {
+        path: 'add-laptop',
+        loadChildren:()=>import('./add-laptop/add-laptop.module').then((m)=>m.AddLaptopModule),
+      },
     ]
   }
 ];
