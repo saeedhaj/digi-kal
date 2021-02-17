@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {AppCoreModule} from 'src/app/app-core/index'; 
 
 @NgModule({
   declarations: [ListLaptopComponent],
@@ -16,7 +17,10 @@ import {MatButtonModule} from '@angular/material/button';
     FlexLayoutModule  ,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    AppCoreModule    
+
+    
   ]
 })
 export class ListLaptopModule { }
