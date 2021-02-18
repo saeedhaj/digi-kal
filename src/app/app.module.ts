@@ -13,7 +13,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,6 +19,10 @@ const routes: Routes = [
         path: 'monitor',
         loadChildren:()=>import('./monitor/monitor.module').then((m)=>m.MonitorModule),
       },
+      {
+        path: 'chat',
+        loadChildren:()=>import('./chat/chat.module').then((m)=>m.ChatModule),
+      },
     ]
   }
 ];

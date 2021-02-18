@@ -11,9 +11,9 @@ import { DataTableModule } from "./data-table/data-table.module";
   imports: [
     CommonModule,
     AppCoreRoutingModule,
-    DataTableModule
+    DataTableModule,
+  
   ],
   exports: [DataTableModule]
 })
 export class AppCoreModule { }
-// import {AppCoreModule} from '../../../core/index';
