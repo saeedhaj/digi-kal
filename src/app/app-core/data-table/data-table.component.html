@@ -1,10 +1,10 @@
-<table border="2" style="width: 100%;">
-    <tr *ngFor="let item of columns">
+<table class="table table-bordered" style="width: 700px;margin: 0 auto;">
+    <tr class="table-success" *ngFor="let item of columns">
         <th>{{item.name}}</th>
         <th>{{item.color}}</th>
         <th>{{item.size}}</th>
     </tr>
-    <tr *ngFor="let item of rows">
+    <tr class="table-warning" *ngFor="let item of rows">
         <td>{{item.titleName}}</td>
         <td>{{item.titleColor}}</td>
         <td>{{item.titleSize}}</td>
