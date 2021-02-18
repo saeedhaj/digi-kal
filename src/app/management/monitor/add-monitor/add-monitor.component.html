@@ -1,1 +1,19 @@
-<p>add-monitor works!</p>
+<div class="app-add-monitor">
+    <div fxLayout="row">
+        <form action="" fxLayout="column" [formGroup]="monitorForm" (submit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>name</mat-label>
+                <input matInput formControlName="name" placeholder="Placeholder">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>color</mat-label>
+                <input matInput formControlName="color" placeholder="Placeholder">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>size</mat-label>
+                <input matInput formControlName="size" placeholder="Placeholder">
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">save</button>
+        </form>
+    </div>
+</div>

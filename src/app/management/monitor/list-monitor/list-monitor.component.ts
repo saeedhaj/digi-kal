@@ -7,6 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListMonitorComponent implements OnInit {
 
+  monitorColumns:any[]=[
+    {
+      name:'monitorName',
+      color:'color',
+      size:'size'
+    }
+  ];
+  
+  monitorRows:any[]=[
+    {
+      titleName:'lg',
+      titleColor:'blue',
+      titleSize:'15'
+
+    },
+    {
+      titleName:'apple',
+      titleColor:'blue',
+      titleSize:'15'
+
+    },
+    {
+      titleName:'samsung',
+      titleColor:'blue',
+      titleSize:'15'
+
+    },
+  ]
   constructor() { }
 
   ngOnInit(): void {

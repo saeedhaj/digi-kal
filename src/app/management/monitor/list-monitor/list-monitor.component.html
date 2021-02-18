@@ -1,1 +1,8 @@
-<p>list-monitor works!</p>
+<div class="app-list-monitor">
+    <div class="list-monitor-title" fxLayout="row">
+        <div fxFlex class="monitor-title">monitor</div>
+        <button mat-raised-button routerLink="/monitor/add-monitor" color="primary">Add</button>
+    </div>
+</div>
+
+<app-data-table [rows]="monitorRows" [columns]="monitorColumns"></app-data-table>
