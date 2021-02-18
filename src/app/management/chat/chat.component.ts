@@ -1,4 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+// import { ChatService } from "src/app/management/chat/chat-service";
+
+interface ChatItemListInterface{
+  name:string;
+  title:string;
+  date:number;
+  number:number;
+}
+class ChatItemListModel implements ChatItemListInterface{
+  name='';
+  title='';
+  date;
+  number;
+constructor(
+  name:string,
+  title:string,
+  date:number,
+  number:number,
+){
+  this.name=name='';
+  this.title=title='';
+  this.date=date;
+  this.number=number;
+}
+}
+export interface Section {
+  name: string;
+  updated: Date;
+}
 
 @Component({
   selector: 'app-chat',
@@ -7,9 +36,78 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
-  constructor() { }
+  // showFiller = false;
 
+  folders: Section[] = [
+    {
+      name: 'Photos',
+      updated: new Date('1/1/16'),
+    },
+    {
+      name: 'Recipes',
+      updated: new Date('1/17/16'),
+    },
+    {
+      name: 'Work',
+      updated: new Date('1/28/16'),
+    }
+  ];
+  notes: Section[] = [
+    {
+      name: 'Vacation Itinerary',
+      updated: new Date('2/20/16'),
+    },
+    {
+      name: 'Kitchen Remodel',
+      updated: new Date('1/18/16'),
+    }
+  ];
+
+ chatList:any[]=[
+   {
+    firstName:'Alice Freeman',
+    lastName:'You are the worst!',
+    email:' Jun 12, 2017 ',
+    id:'4'
+   },
+   {
+    firstName:'Alice Freeman',
+    lastName:'You are the worst!',
+    email:' Jun 12, 2017 ',
+    id:'4'
+   },
+   {
+    firstName:'Alice Freeman',
+    lastName:'You are the worst!',
+    email:' Jun 12, 2017 ',
+    id:'4'
+   },
+   {
+    firstName:'Alice Freeman',
+    lastName:'You are the worst!',
+    email:' Jun 12, 2017 ',
+    id:'4'
+   },
+ ];
+
+  showFiller = false;
+  lodingServer:boolean=true;
+  isShowing:boolean=true;
+  constructor() { }
+  // private chatService:ChatService
   ngOnInit(): void {
+    // this.getChatsList();
+  }
+  // private getChatsList(){
+  //   this.chatService.getChats().subscribe((res:any)=>{
+  //     console.log(res);
+  //      this.lodingServer=false;
+  //      this.chatList = res;
+  //   });
+  // }
+
+  onHiddenClick(){
+    this.isShowing=false;
   }
 
 }

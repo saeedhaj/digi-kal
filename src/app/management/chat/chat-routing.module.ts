@@ -5,7 +5,17 @@ import { ChatComponent } from "./chat.component";
 const routes: Routes = [
   {
     path:'',
-    component:ChatComponent
+    component:ChatComponent,
+    children:[
+      {
+        path:'',
+        redirectTo:'app-chat'
+      },
+      {
+        path: 'app-chat',
+        loadChildren:()=>import('./app-chat/app-chat.module').then((m)=>m.AppChatModule),
+      },
+    ]
   }
 ];
 
