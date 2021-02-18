@@ -1,7 +1,7 @@
 .app-chat {
     .chat-container {
-        min-height: 500px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        min-height: 75px;
+        // border: 1px solid rgba(0, 0, 0, 0.5);
         .chat-header {
             // padding: 20px;
             width: 400px;
@@ -59,7 +59,16 @@
                 .text-title {
                     color: #2cabe9;
                     text-transform: capitalize;
-                    font-size: 1.55em;
+                    font-size: 1.8em;
+                    margin-bottom: 60px;
+                    font-weight: 200;
+                }
+                .chat-container {
+                    // margin-top: 50px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #908787;
+                    padding-bottom: 10px;
+                    width: 375px
                 }
             }
             .text-body {

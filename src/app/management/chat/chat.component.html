@@ -6,7 +6,7 @@
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="">
 
                     <div fxFlex class="image-header">
-                        <img src="/assets/img/profile.jpg" alt="" routerLink="src/app/management/chat/app-chat">
+                        <img src="/assets/img/profile.jpg" alt="">
                         <mat-icon class="icon-chech">check</mat-icon>
 
                     </div>
@@ -42,8 +42,7 @@
                     <!-- <div *ngIf="lodingServer">
                         <mat-spinner></mat-spinner>
                     </div> -->
-                    <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" style="    margin-top: 50px;
-                margin-bottom: 20px;">
+                    <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" class="chat-container">
                         <div fxFlex class="image-header">
                             <img src="./assets/img/alice (1).jpg" alt="">
                             <mat-icon class="icon-chech">check</mat-icon>
@@ -60,7 +59,7 @@
                                 <div class="number">{{item.id}}</div>
                             </div>
                         </div>
-                        <mat-divider></mat-divider>
+
                     </div>
 
                 </div>
@@ -68,7 +67,7 @@
                 <div class="section-body">
                     <h3 class="text-title">contacts</h3>
                     <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" style="    margin-top: 50px;
-                margin-bottom: 20px;">
+                margin-bottom: 20px;border-bottom: 1px solid #908787;padding-bottom: 10px;width: 375px;">
                         <div fxFlex class="image-header">
                             <img src="./assets/img/alice (1).jpg" alt="">
                             <mat-icon class="icon-chech">check</mat-icon>

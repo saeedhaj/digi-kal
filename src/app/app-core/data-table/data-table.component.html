@@ -1,26 +1,26 @@
 <table class="table table-bordered" style="width: 700px;margin: 0 auto;">
     <tr class="table-success" *ngFor="let item of columns">
-        <div [class]="'box'+selectedButton?.class">
-            <th>{{item.name}}</th>
-            <th>{{item.color}}</th>
-            <th>{{item.size}} </th>
-            <th class="icon-menu">
-                <button [ngClass]="{demo:'true'}" class="icon" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+
+        <th>{{item.name}}</th>
+        <th>{{item.color}}</th>
+        <th>{{item.size}} </th>
+        <th class="icon-menu">
+            <button [ngClass]="{demo:'true'}" class="icon" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
                 <mat-icon >more_vert</mat-icon>
               </button>
-                <mat-menu #menu="matMenu">
-                    <button mat-menu-item (click)="onButtonColorClick(item)" [class]="item.class">
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
                   <span >{{item.red}}</span>
                 </button>
-                    <button mat-menu-item>
+                <button mat-menu-item>
                   <span>{{item.blue}}</span>
                 </button>
-                    <button mat-menu-item>
+                <button mat-menu-item>
                   <span>{{item.green}}</span>
                 </button>
-                </mat-menu>
-            </th>
-        </div>
+            </mat-menu>
+        </th>
+
     </tr>
     <tr class="table-warning" *ngFor="let item of rows">
         <td>{{item.titleName}}</td>

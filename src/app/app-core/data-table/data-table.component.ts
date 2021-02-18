@@ -9,14 +9,12 @@ export class DataTableComponent implements OnInit {
 
   @Input() columns:any[]=[];
   @Input() rows:any[]=[]
-  selectedButton;
+  
   constructor() {
     
    }
 
   ngOnInit(): void {
   }
-  onButtonColorClick(selectedButton){
-this.selectedButton=selectedButton
-  }
+  
 }
