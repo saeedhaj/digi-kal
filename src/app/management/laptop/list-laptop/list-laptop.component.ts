@@ -10,7 +10,11 @@ export class ListLaptopComponent implements OnInit {
     {
       name:'laptopName',
       color:'color',
-      size:'size'
+      size:'size',
+      class:'red',
+      red:'red',
+      blue:'blue',
+      green:'green'
     }
   ];
   
