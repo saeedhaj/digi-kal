@@ -1,14 +1,13 @@
 <div class="app-chat">
     <mat-drawer-container class="chat-container" autosize>
+        <!-- part left -->
         <mat-drawer #drawer class="chat-header" mode="side">
-
+            <!-- From the left part of the search section -->
             <div class="chat-title">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="">
-
                     <div fxFlex class="image-header">
                         <img src="/assets/img/profile.jpg" alt="">
                         <mat-icon class="icon-chech">check</mat-icon>
-
                     </div>
                     <div fxFlex class="menu-header">
                         <button mat-button [matMenuTriggerFor]="userMenu">
@@ -18,7 +17,6 @@
                             <button mat-menu-item>Item 1</button>
                             <button mat-menu-item>Item 2</button>
                         </mat-menu>
-
                     </div>
                     <button class="button-clear" (click)="drawer.toggle();isShowing=true;">
                         <mat-icon>close</mat-icon>
@@ -34,7 +32,9 @@
                 </div>
                 <mat-divider></mat-divider>
             </div>
+            <!-- End of the left part of the search section-->
 
+            <!-- From the left part of the chat section -->
             <div class="section" style="overflow: scroll;
             max-height:400px;">
                 <div class="section-body">
@@ -63,7 +63,9 @@
                     </div>
 
                 </div>
+                <!-- End of the left part of the chat section -->
 
+                <!-- From the left part of the contact section -->
                 <div class="section-body">
                     <h3 class="text-title">contacts</h3>
                     <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" style="    margin-top: 50px;
@@ -82,8 +84,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End of the left part of the contact section -->
         </mat-drawer>
-
+        <!--start part right  -->
         <div class="chat-sidenav-content">
 
             <div class="chat-title">
@@ -265,10 +268,7 @@
                 </mat-form-field>
             </div>
         </div>
-
-
-
-
+        <!--end part right  -->
     </mat-drawer-container>
     <router-outlet></router-outlet>
 

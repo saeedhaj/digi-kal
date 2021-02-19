@@ -11,7 +11,8 @@ export class ListMonitorComponent implements OnInit {
     {
       name:'monitorName',
       color:'color',
-      size:'size'
+      size:'size',
+      country: 'UK'
     }
   ];
   
@@ -19,7 +20,8 @@ export class ListMonitorComponent implements OnInit {
     {
       titleName:'lg',
       titleColor:'blue',
-      titleSize:'15'
+      titleSize:'15',
+      
 
     },
     {

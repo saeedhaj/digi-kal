@@ -8,13 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DataTableComponent implements OnInit {
 
   @Input() columns:any[]=[];
-  @Input() rows:any[]=[]
-  
+  @Input() rows:any[]=[];
   constructor() {
     
    }
 
   ngOnInit(): void {
   }
+
+  
   
 }

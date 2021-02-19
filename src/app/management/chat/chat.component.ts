@@ -91,7 +91,7 @@ export class ChatComponent implements OnInit {
  ];
 
   showFiller = false;
-  lodingServer:boolean=true;
+  // lodingServer:boolean=true;
   isShowing:boolean=true;
   constructor() { }
   // private chatService:ChatService
