@@ -91,21 +91,12 @@ export class ChatComponent implements OnInit {
  ];
 
   showFiller = false;
-  // lodingServer:boolean=true;
   isShowing:boolean=true;
-  constructor() { }
-  // private chatService:ChatService
-  ngOnInit(): void {
-    // this.getChatsList();
-  }
-  // private getChatsList(){
-  //   this.chatService.getChats().subscribe((res:any)=>{
-  //     console.log(res);
-  //      this.lodingServer=false;
-  //      this.chatList = res;
-  //   });
-  // }
 
+  constructor() { }
+  ngOnInit(): void {
+  }
+  
   onHiddenClick(){
     this.isShowing=false;
   }
